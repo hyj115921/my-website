@@ -6,23 +6,48 @@
     <title>胡星宇</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* 更改字体 */
             background-color: #ffe4e1;
             color: #333;
             margin: 0;
             padding: 20px;
             text-align: center;
+            background-image: url('background.jpg'); /* 背景图片 */
+            background-size: cover; /* 背景图片填充 */
         }
         h1 {
-            font-size: 2em;
+            font-size: 2.5em; /* 更改标题字体大小 */
             color: #ff1493;
+            text-shadow: 2px 2px #ff0000; /* 文字阴影 */
+        }
+        p {
+            font-size: 1.2em; /* 更改段落字体大小 */
+            color: #4b0082; /* 更改段落字体颜色 */
+            border: 2px solid #000; /* 边框 */
+            padding: 10px;
+            border-radius: 10px; /* 圆角 */
+            background-color: #ffffff80; /* 半透明背景 */
+        }
+        .highlight {
+            color: #ff4500;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container img {
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <h1>胡星宇</h1>
-    <img src="hu_xingyu_image.jpg" alt="胡星宇" width="300">
-    <p>首先是星宇桑！沉迷于光遇等游戏久久没有回归刺激战场的强大女特种兵！！！虽然她已经离开战场很久了！但是我们从来都没有忘记她！！她在整个刺激战场上的影响力仍旧是无与伦比的！她是黄先生手底下最强大的矛！</p>
-    <a href="index.html">返回主页</a>
+    <div class="container">
+        <img src="hu_xingyu_image.jpg" alt="胡星宇" width="300">
+        <p>首先是星宇桑！<span class="highlight">沉迷于光遇等游戏</span>久久没有回归刺激战场的强大女特种兵！！！虽然她已经离开战场很久了！但是我们从来都没有忘记她！！她在整个刺激战场上的影响力仍旧是无与伦比的！她是黄先生手底下最强大的矛！</p>
+        <a href="index.html">返回主页</a>
+    </div>
 </body>
 </html>
