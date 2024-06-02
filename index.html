@@ -5,23 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>世界上最最最最最强大的黄先生和他的小弟们</title>
     <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(270deg, #ff7e5f, #feb47b);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             color: #333;
             margin: 0;
             padding: 20px;
             text-align: center;
         }
+
         h1 {
             font-size: 2.5em;
             font-weight: bold;
             color: #ffffff;
             text-shadow: 3px 3px #ff4500;
         }
+
         .names {
             margin-top: 50px;
         }
+
         .names a {
             display: block;
             font-size: 1.5em;
@@ -31,25 +48,40 @@
             color: #ffffff;
             transition: color 0.3s;
         }
+
         .names a:hover {
             color: #ff4500;
         }
+
         .intro-text {
             font-size: 1.2em;
             margin: 20px auto;
             max-width: 600px;
             line-height: 1.5;
         }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>世界上最最最最最强大的黄先生和他的小弟们</h1>
-    <img src="main-image.jpg" alt="Main Image" width="300">
-    <div class="intro-text">
+    <h1 class="fade-in">世界上最最最最最强大的黄先生和他的小弟们</h1>
+    <img src="main-image.jpg" alt="Main Image" width="300" class="fade-in" style="animation-delay: 1s;">
+    <div class="intro-text fade-in" style="animation-delay: 2s;">
         现在，我们将会看到这个世界上最最最最最强大的五人组，它名为！
         ————【世界上最最最最最强大的黄先生和他的小弟们】
     </div>
-    <div class="names">
+    <div class="names fade-in" style="animation-delay: 3s;">
         <a href="hu_xingyu.html">胡星宇</a>
         <a href="chen_shuni.html">陈淑妮</a>
         <a href="zhou_chengguo.html">周成果</a>
